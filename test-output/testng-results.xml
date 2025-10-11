@@ -1,37 +1,240 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Launched Chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Browser Maximized]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+    </line>
+    <line>
+      <![CDATA[Implicit wait set to: 10 seconds]]>
+    </line>
+    <line>
+      <![CDATA[Element display is verified]]>
+    </line>
+    <line>
+      <![CDATA[Entered Admin]]>
+    </line>
+    <line>
+      <![CDATA[Entered admin123]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on]]>
+    </line>
+    <line>
+      <![CDATA[Element display is verified]]>
+    </line>
+    <line>
+      <![CDATA[Closed browser]]>
+    </line>
+    <line>
+      <![CDATA[Launched Chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Browser Maximized]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+    </line>
+    <line>
+      <![CDATA[Implicit wait set to: 10 seconds]]>
+    </line>
+    <line>
+      <![CDATA[Element display is verified]]>
+    </line>
+    <line>
+      <![CDATA[Entered Admin]]>
+    </line>
+    <line>
+      <![CDATA[Entered Admin]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on]]>
+    </line>
+    <line>
+      <![CDATA[Element display is verified]]>
+    </line>
+    <line>
+      <![CDATA[Closed browser]]>
+    </line>
+    <line>
+      <![CDATA[Launched Chrome browser]]>
+    </line>
+    <line>
+      <![CDATA[Browser Maximized]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+    </line>
+    <line>
+      <![CDATA[Implicit wait set to: 10 seconds]]>
+    </line>
+    <line>
+      <![CDATA[Element display is verified]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on]]>
+    </line>
+    <line>
+      <![CDATA[Element display is verified]]>
+    </line>
+    <line>
+      <![CDATA[Element display is verified]]>
+    </line>
+    <line>
+      <![CDATA[Closed browser]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-10-09T00:26:59 IST" name="Default suite" finished-at="2025-10-09T00:27:43 IST" duration-ms="43608">
+  <suite started-at="2025-10-12T03:41:39 IST" name="Suite" finished-at="2025-10-12T03:42:25 IST" duration-ms="45832">
     <groups>
     </groups>
-    <test started-at="2025-10-09T00:26:59 IST" name="Default test" finished-at="2025-10-09T00:27:43 IST" duration-ms="43608">
+    <test started-at="2025-10-12T03:41:39 IST" name="Test" finished-at="2025-10-12T03:42:25 IST" duration-ms="45832">
       <class name="testCases.Module1_Login">
-        <test-method signature="verifyLoginWithValidData()[pri:0, instance:testCases.Module1_Login@79e4c792]" started-at="2025-10-09T00:26:59 IST" name="verifyLoginWithValidData" finished-at="2025-10-09T00:27:08 IST" duration-ms="9085" status="PASS">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:testCases.Module1_Login@4a8355dd]" started-at="2025-10-12T03:41:39 IST" name="setUpReport" finished-at="2025-10-12T03:41:39 IST" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithValidData -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.Module1_Login@79e4c792]" started-at="2025-10-09T00:27:08 IST" name="postCondition" finished-at="2025-10-09T00:27:08 IST" duration-ms="136" status="PASS">
+        </test-method> <!-- setUpReport -->
+        <test-method signature="VerifyLoginWithValidData()[pri:0, instance:testCases.Module1_Login@4a8355dd]" started-at="2025-10-12T03:41:39 IST" name="VerifyLoginWithValidData" finished-at="2025-10-12T03:41:56 IST" duration-ms="16745" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Launched Chrome browser]]>
+            </line>
+            <line>
+              <![CDATA[Browser Maximized]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+            </line>
+            <line>
+              <![CDATA[Implicit wait set to: 10 seconds]]>
+            </line>
+            <line>
+              <![CDATA[Element display is verified]]>
+            </line>
+            <line>
+              <![CDATA[Entered Admin]]>
+            </line>
+            <line>
+              <![CDATA[Entered admin123]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on]]>
+            </line>
+            <line>
+              <![CDATA[Element display is verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginWithValidData -->
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@4a8355dd]" started-at="2025-10-12T03:41:56 IST" name="testOver" finished-at="2025-10-12T03:41:57 IST" duration-ms="1122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoginWithValidData status=SUCCESS method=Module1_Login.VerifyLoginWithValidData()[pri:0, instance:testCases.Module1_Login@4a8355dd] output=Launched Chrome browser]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Closed browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testOver -->
+        <test-method signature="VerifyLoginWithInvalidData()[pri:1, instance:testCases.Module1_Login@4a8355dd]" started-at="2025-10-12T03:41:57 IST" name="VerifyLoginWithInvalidData" finished-at="2025-10-12T03:42:11 IST" duration-ms="13737" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Launched Chrome browser]]>
+            </line>
+            <line>
+              <![CDATA[Browser Maximized]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+            </line>
+            <line>
+              <![CDATA[Implicit wait set to: 10 seconds]]>
+            </line>
+            <line>
+              <![CDATA[Element display is verified]]>
+            </line>
+            <line>
+              <![CDATA[Entered Admin]]>
+            </line>
+            <line>
+              <![CDATA[Entered Admin]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on]]>
+            </line>
+            <line>
+              <![CDATA[Element display is verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginWithInvalidData -->
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@4a8355dd]" started-at="2025-10-12T03:42:11 IST" name="testOver" finished-at="2025-10-12T03:42:12 IST" duration-ms="1102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoginWithInvalidData status=SUCCESS method=Module1_Login.VerifyLoginWithInvalidData()[pri:1, instance:testCases.Module1_Login@4a8355dd] output=Launched Chrome browser]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Closed browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testOver -->
+        <test-method signature="VerifyLoginWithNoData()[pri:2, instance:testCases.Module1_Login@4a8355dd]" started-at="2025-10-12T03:42:12 IST" name="VerifyLoginWithNoData" finished-at="2025-10-12T03:42:24 IST" duration-ms="11974" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Launched Chrome browser]]>
+            </line>
+            <line>
+              <![CDATA[Browser Maximized]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+            </line>
+            <line>
+              <![CDATA[Implicit wait set to: 10 seconds]]>
+            </line>
+            <line>
+              <![CDATA[Element display is verified]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on]]>
+            </line>
+            <line>
+              <![CDATA[Element display is verified]]>
+            </line>
+            <line>
+              <![CDATA[Element display is verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- VerifyLoginWithNoData -->
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@4a8355dd]" started-at="2025-10-12T03:42:24 IST" name="testOver" finished-at="2025-10-12T03:42:25 IST" duration-ms="1124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyLoginWithNoData status=SUCCESS method=Module1_Login.VerifyLoginWithNoData()[pri:2, instance:testCases.Module1_Login@4a8355dd] output=Launched Chrome browser]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Closed browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testOver -->
+        <test-method is-config="true" signature="updateReport()[pri:0, instance:testCases.Module1_Login@4a8355dd]" started-at="2025-10-12T03:42:25 IST" name="updateReport" finished-at="2025-10-12T03:42:25 IST" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method signature="verifyLoginWithInvalidData()[pri:1, instance:testCases.Module1_Login@79e4c792]" started-at="2025-10-09T00:27:08 IST" name="verifyLoginWithInvalidData" finished-at="2025-10-09T00:27:22 IST" duration-ms="14182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidData -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.Module1_Login@79e4c792]" started-at="2025-10-09T00:27:22 IST" name="postCondition" finished-at="2025-10-09T00:27:25 IST" duration-ms="2670" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
-        <test-method signature="verifyLoginWithNoData()[pri:2, instance:testCases.Module1_Login@79e4c792]" started-at="2025-10-09T00:27:25 IST" name="verifyLoginWithNoData" finished-at="2025-10-09T00:27:42 IST" duration-ms="17363" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithNoData -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.Module1_Login@79e4c792]" started-at="2025-10-09T00:27:42 IST" name="postCondition" finished-at="2025-10-09T00:27:43 IST" duration-ms="145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postCondition -->
+        </test-method> <!-- updateReport -->
       </class> <!-- testCases.Module1_Login -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
