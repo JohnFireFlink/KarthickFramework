@@ -16,7 +16,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 public class WebUtils {
 
 	public WebDriver driver;
-	public String ENV=System.getProperty("env");
+	public String ENV=System.getProperty("env","local");
 
 	public WebElement locateElement(List<By> locators)
 	{

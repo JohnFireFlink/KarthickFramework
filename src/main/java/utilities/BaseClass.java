@@ -7,9 +7,9 @@ public class BaseClass {
 
 	public WebUtils web=new WebUtils();
 	
-	public String BROWSER=System.getProperty("browser");
-	public String URL=System.getProperty("url");
-	public String ENV=System.getProperty("env");
+	public String BROWSER=System.getProperty("browser","chrome");
+	public String URL=System.getProperty("url","https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+	
 	
 	//Pages
 	public LoginPage lp=new LoginPage();
