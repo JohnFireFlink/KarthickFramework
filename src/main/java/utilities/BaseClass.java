@@ -9,6 +9,7 @@ public class BaseClass {
 	
 	public String BROWSER=System.getProperty("browser");
 	public String URL=System.getProperty("url");
+	public String ENV=System.getProperty("env");
 	
 	//Pages
 	public LoginPage lp=new LoginPage();

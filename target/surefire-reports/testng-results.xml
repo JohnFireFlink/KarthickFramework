@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-10-11T23:07:58 IST" name="Suite" finished-at="2025-10-11T23:09:07 IST" duration-ms="68734">
+  <suite started-at="2025-10-12T00:41:54 IST" name="Suite" finished-at="2025-10-12T00:42:21 IST" duration-ms="26854">
     <groups>
     </groups>
-    <test started-at="2025-10-11T23:07:58 IST" name="Test" finished-at="2025-10-11T23:09:07 IST" duration-ms="68734">
+    <test started-at="2025-10-12T00:41:54 IST" name="Test" finished-at="2025-10-12T00:42:21 IST" duration-ms="26854">
       <class name="testCases.Module1_Login">
-        <test-method signature="verifyLoginWithValidData()[pri:0, instance:testCases.Module1_Login@1ab3a8c8]" started-at="2025-10-11T23:07:58 IST" name="verifyLoginWithValidData" finished-at="2025-10-11T23:08:21 IST" duration-ms="23334" status="PASS">
+        <test-method signature="verifyLoginWithValidData()[pri:0, instance:testCases.Module1_Login@1ab3a8c8]" started-at="2025-10-12T00:41:54 IST" name="verifyLoginWithValidData" finished-at="2025-10-12T00:42:06 IST" duration-ms="12121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidData -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.Module1_Login@1ab3a8c8]" started-at="2025-10-11T23:08:21 IST" name="postCondition" finished-at="2025-10-11T23:08:23 IST" duration-ms="1869" status="PASS">
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.Module1_Login@1ab3a8c8]" started-at="2025-10-12T00:42:06 IST" name="postCondition" finished-at="2025-10-12T00:42:07 IST" duration-ms="232" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method signature="verifyLoginWithInvalidData()[pri:1, instance:testCases.Module1_Login@1ab3a8c8]" started-at="2025-10-11T23:08:23 IST" name="verifyLoginWithInvalidData" finished-at="2025-10-11T23:08:39 IST" duration-ms="16220" status="PASS">
+        <test-method signature="verifyLoginWithInvalidData()[pri:1, instance:testCases.Module1_Login@1ab3a8c8]" started-at="2025-10-12T00:42:07 IST" name="verifyLoginWithInvalidData" finished-at="2025-10-12T00:42:15 IST" duration-ms="7911" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithInvalidData -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.Module1_Login@1ab3a8c8]" started-at="2025-10-11T23:08:39 IST" name="postCondition" finished-at="2025-10-11T23:08:39 IST" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.Module1_Login@1ab3a8c8]" started-at="2025-10-12T00:42:15 IST" name="postCondition" finished-at="2025-10-12T00:42:15 IST" duration-ms="161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method signature="verifyLoginWithNoData()[pri:2, instance:testCases.Module1_Login@1ab3a8c8]" started-at="2025-10-11T23:08:39 IST" name="verifyLoginWithNoData" finished-at="2025-10-11T23:09:06 IST" duration-ms="26940" status="PASS">
+        <test-method signature="verifyLoginWithNoData()[pri:2, instance:testCases.Module1_Login@1ab3a8c8]" started-at="2025-10-12T00:42:15 IST" name="verifyLoginWithNoData" finished-at="2025-10-12T00:42:21 IST" duration-ms="6241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithNoData -->
-        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.Module1_Login@1ab3a8c8]" started-at="2025-10-11T23:09:06 IST" name="postCondition" finished-at="2025-10-11T23:09:07 IST" duration-ms="143" status="PASS">
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.Module1_Login@1ab3a8c8]" started-at="2025-10-12T00:42:21 IST" name="postCondition" finished-at="2025-10-12T00:42:21 IST" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
