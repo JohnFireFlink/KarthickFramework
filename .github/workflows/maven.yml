@@ -28,4 +28,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Run Login Tests
-      run: mvn test -Dbrowser=chrome -Durl=http://opensource-demo.orangehrmlive.com/
+      run: mvn test -Durl=http://opensource-demo.orangehrmlive.com/ -Dbrowser=c
+hrome -Denv=headless
