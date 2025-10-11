@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-09T00:26:59 IST" name="Default suite" finished-at="2025-10-09T00:27:43 IST" duration-ms="43608">
+    <groups>
+    </groups>
+    <test started-at="2025-10-09T00:26:59 IST" name="Default test" finished-at="2025-10-09T00:27:43 IST" duration-ms="43608">
+      <class name="testCases.Module1_Login">
+        <test-method signature="verifyLoginWithValidData()[pri:0, instance:testCases.Module1_Login@79e4c792]" started-at="2025-10-09T00:26:59 IST" name="verifyLoginWithValidData" finished-at="2025-10-09T00:27:08 IST" duration-ms="9085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidData -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.Module1_Login@79e4c792]" started-at="2025-10-09T00:27:08 IST" name="postCondition" finished-at="2025-10-09T00:27:08 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method signature="verifyLoginWithInvalidData()[pri:1, instance:testCases.Module1_Login@79e4c792]" started-at="2025-10-09T00:27:08 IST" name="verifyLoginWithInvalidData" finished-at="2025-10-09T00:27:22 IST" duration-ms="14182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidData -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.Module1_Login@79e4c792]" started-at="2025-10-09T00:27:22 IST" name="postCondition" finished-at="2025-10-09T00:27:25 IST" duration-ms="2670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method signature="verifyLoginWithNoData()[pri:2, instance:testCases.Module1_Login@79e4c792]" started-at="2025-10-09T00:27:25 IST" name="verifyLoginWithNoData" finished-at="2025-10-09T00:27:42 IST" duration-ms="17363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithNoData -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:testCases.Module1_Login@79e4c792]" started-at="2025-10-09T00:27:42 IST" name="postCondition" finished-at="2025-10-09T00:27:43 IST" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- testCases.Module1_Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

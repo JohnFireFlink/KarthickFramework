@@ -1,0 +1,10 @@
+{
+  "LoginPage": {
+    "usernameField": {"xpath":"//*[@id='username']","id":"username']","name":"username']"},
+    "passwordField": {"xpath":"//*[@id='password']","id":"password']","name":"password']"},
+    "loginButton": {"xpath":"//*[@id='loginButton']","id":"loginButton']","name":"loginButton']"} },
+  "HomePage": {
+    "welcomeText": {"xpath":"//*[@id='Welcome']","id":"Welcome']","name":"Welcome']"},
+    "logoutButton": {"xpath":"//*[@id='Logout']","id":"Logout']","name":"Logout']"}
+  }
+}
