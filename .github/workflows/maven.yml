@@ -14,7 +14,7 @@ jobs:
       # Step 1: Checkout repository
       - uses: actions/checkout@v4
 
-      # Step 2: Set up JDK (same as local)
+      # Step 2: Set up JDK
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
@@ -22,22 +22,27 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      # Step 3: Verify JDK and Maven versions (for debug)
+      # Step 3: Verify environment (optional)
       - name: Verify environment
         run: |
           java -version
           mvn -v
 
-      # Step 4: Clean and build project (includes Lombok fixes)
+      # Step 4: Clean and build project
       - name: Build with Maven
-        run: mvn -B clean compile \
-          -Dfile.encoding=UTF-8 \
-          -Dmaven.compiler.source=17 \
-          -Dmaven.compiler.target=17 \
-          -Dmaven.compiler.showDeprecation=true \
-          -Dmaven.compiler.failOnWarning=false \
+        run: >
+          mvn -B clean compile
+          -Dfile.encoding=UTF-8
+          -Dmaven.compiler.source=17
+          -Dmaven.compiler.target=17
+          -Dmaven.compiler.showDeprecation=true
+          -Dmaven.compiler.failOnWarning=false
           -Dmaven.compiler.compilerArgs="--add-exports=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED"
 
       # Step 5: Run your tests
       - name: Run Login Tests
-        run: mvn test -Durl=http://opensource-demo.orangehrmlive.com/ -Dbrowser=chrome -Denv=headless
+        run: >
+          mvn test
+          -Durl=http://opensource-demo.orangehrmlive.com/
+          -Dbrowser=chrome
+          -Denv=headless
