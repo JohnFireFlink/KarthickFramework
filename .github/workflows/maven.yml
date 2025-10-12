@@ -41,9 +41,11 @@ jobs:
 
       # Step 5: Run your tests
       - name: Run Login Tests
+	env:
+          API_KEY: ${{ secrets.API_KEY }}
         run: >
           mvn test
           -Durl=http://opensource-demo.orangehrmlive.com/
           -Dbrowser=chrome
           -Denv=headless
-          -DapiKey=${{ secrets.API_KEY }}
+          -DapiKey=$API_KEY
