@@ -89,16 +89,16 @@
       <![CDATA[Closed browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-10-12T18:14:10 IST" name="Regression Suite" finished-at="2025-10-12T18:15:21 IST" duration-ms="70121">
+  <suite started-at="2025-10-12T20:29:55 IST" name="Regression Suite" finished-at="2025-10-12T20:31:04 IST" duration-ms="68794">
     <groups>
     </groups>
-    <test started-at="2025-10-12T18:14:10 IST" name="Test" finished-at="2025-10-12T18:15:21 IST" duration-ms="70121">
+    <test started-at="2025-10-12T20:29:55 IST" name="Test" finished-at="2025-10-12T20:31:04 IST" duration-ms="68794">
       <class name="testCases.Module1_Login">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:14:10 IST" name="setUpReport" finished-at="2025-10-12T18:14:10 IST" duration-ms="351" status="PASS">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T20:29:54 IST" name="setUpReport" finished-at="2025-10-12T20:29:55 IST" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method signature="VerifyLoginWithValidData()[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:14:10 IST" name="VerifyLoginWithValidData" finished-at="2025-10-12T18:14:34 IST" duration-ms="23622" status="PASS">
+        <test-method signature="VerifyLoginWithValidData()[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T20:29:55 IST" name="VerifyLoginWithValidData" finished-at="2025-10-12T20:30:24 IST" duration-ms="28817" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launched Chrome browser]]>
@@ -129,7 +129,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- VerifyLoginWithValidData -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:14:34 IST" name="testOver" finished-at="2025-10-12T18:14:35 IST" duration-ms="1220" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T20:30:24 IST" name="testOver" finished-at="2025-10-12T20:30:25 IST" duration-ms="1241" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,7 +143,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method signature="VerifyLoginWithInvalidData()[pri:1, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:14:35 IST" name="VerifyLoginWithInvalidData" finished-at="2025-10-12T18:14:58 IST" duration-ms="22277" status="PASS">
+        <test-method signature="VerifyLoginWithInvalidData()[pri:1, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T20:30:25 IST" name="VerifyLoginWithInvalidData" finished-at="2025-10-12T20:30:45 IST" duration-ms="19822" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launched Chrome browser]]>
@@ -174,7 +174,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- VerifyLoginWithInvalidData -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:14:58 IST" name="testOver" finished-at="2025-10-12T18:14:59 IST" duration-ms="1180" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T20:30:45 IST" name="testOver" finished-at="2025-10-12T20:30:46 IST" duration-ms="1250" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -188,7 +188,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method signature="VerifyLoginWithNoData()[pri:2, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:14:59 IST" name="VerifyLoginWithNoData" finished-at="2025-10-12T18:15:19 IST" duration-ms="20593" status="PASS">
+        <test-method signature="VerifyLoginWithNoData()[pri:2, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T20:30:46 IST" name="VerifyLoginWithNoData" finished-at="2025-10-12T20:31:02 IST" duration-ms="16428" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launched Chrome browser]]>
@@ -216,7 +216,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- VerifyLoginWithNoData -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:15:19 IST" name="testOver" finished-at="2025-10-12T18:15:21 IST" duration-ms="1172" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T20:31:02 IST" name="testOver" finished-at="2025-10-12T20:31:04 IST" duration-ms="1171" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -230,7 +230,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method is-config="true" signature="updateReport()[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:15:21 IST" name="updateReport" finished-at="2025-10-12T18:15:21 IST" duration-ms="731" status="PASS">
+        <test-method is-config="true" signature="updateReport()[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T20:31:04 IST" name="updateReport" finished-at="2025-10-12T20:31:04 IST" duration-ms="732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateReport -->

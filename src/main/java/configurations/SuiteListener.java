@@ -74,8 +74,13 @@ public class SuiteListener implements ISuiteListener {
             request.setBody(mail.build());
             Response response = sg.api(request);
             Reporter.log("Status Code: " + response.getStatusCode(), true);
-            Reporter.log("Response Body: " + response.getBody(), true);
-            Reporter.log("Report email sent successfully!", true);
+            if (response.getStatusCode()!=200) {
+            	Reporter.log("Response Status: " + response.getStatusCode(), true);
+            	Reporter.log("Response Body: " + response.getBody(), true);
+			}
+            else {
+            	Reporter.log("Report email sent successfully!", true);
+            }
         } catch (IOException ex) {
             throw ex;
         }
