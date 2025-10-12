@@ -46,3 +46,4 @@ jobs:
           -Durl=http://opensource-demo.orangehrmlive.com/
           -Dbrowser=chrome
           -Denv=headless
+          -DapiKey=${{ secrets.API_KEY }}
