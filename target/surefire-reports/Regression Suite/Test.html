@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 12 20:29:55 IST 2025</td>
+<td>Started on:</td><td>Sun Oct 12 23:03:35 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>68 seconds (68794 ms)</td>
+<tr><td>Total time:</td><td>91 seconds (91539 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,62 +77,76 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testCases.Module1_Login.VerifyLoginWithValidData()'><b>VerifyLoginWithValidData</b><br>Test class: testCases.Module1_Login<br/>
-<a href="#Output-51460663" onClick='toggleBox("Output-51460663", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1318475957" onClick='toggleBox("Output-1318475957", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-51460663" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-51460663">
+<a href="#Output-1318475957" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1318475957">
 Launched Chrome browser<br/>
 Browser Maximized<br/>
 Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login<br/>
 Implicit wait set to: 10 seconds<br/>
-Element display is verified<br/>
-Entered Admin<br/>
-Entered admin123<br/>
-Clicked on<br/>
-Element display is verified<br/>
+Locator Used -> xpath://h5[text()='Login']<br/>
+Login Text is displayed<br/>
+Locator Used -> cssSelector:input[placeholder='Username']<br/>
+Entered Admin into Username Text Field<br/>
+Locator Used -> cssSelector:input[placeholder='Password']<br/>
+Entered admin123 into Password Text Field<br/>
+Locator Used -> xpath://button[normalize-space(.)='Login']<br/>
+Clicked on Login Button<br/>
+Locator Used -> xpath://h6[text()='Dashboard']<br/>
+Dashboard Text is displayed<br/>
 </div>
 </td>
 <td></td>
-<td>28</td>
-<td>testCases.Module1_Login@57a3af25</td></tr>
-<tr>
-<td title='testCases.Module1_Login.VerifyLoginWithNoData()'><b>VerifyLoginWithNoData</b><br>Test class: testCases.Module1_Login<br/>
-<a href="#Output-602858680" onClick='toggleBox("Output-602858680", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-602858680" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-602858680">
-Launched Chrome browser<br/>
-Browser Maximized<br/>
-Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login<br/>
-Implicit wait set to: 10 seconds<br/>
-Element display is verified<br/>
-Clicked on<br/>
-Element display is verified<br/>
-Element display is verified<br/>
-</div>
-</td>
-<td></td>
-<td>16</td>
+<td>44</td>
 <td>testCases.Module1_Login@57a3af25</td></tr>
 <tr>
 <td title='testCases.Module1_Login.VerifyLoginWithInvalidData()'><b>VerifyLoginWithInvalidData</b><br>Test class: testCases.Module1_Login<br/>
-<a href="#Output-2042979183" onClick='toggleBox("Output-2042979183", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-670283478" onClick='toggleBox("Output-670283478", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2042979183" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2042979183">
+<a href="#Output-670283478" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-670283478">
 Launched Chrome browser<br/>
 Browser Maximized<br/>
 Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login<br/>
 Implicit wait set to: 10 seconds<br/>
-Element display is verified<br/>
-Entered Admin<br/>
-Entered Admin<br/>
-Clicked on<br/>
-Element display is verified<br/>
+Locator Used -> xpath://h5[text()='Login']<br/>
+Login Text is displayed<br/>
+Locator Used -> cssSelector:input[placeholder='Username']<br/>
+Entered Admin into Username Text Field<br/>
+Locator Used -> cssSelector:input[placeholder='Password']<br/>
+Entered Admin into Password Text Field<br/>
+Locator Used -> xpath://button[normalize-space(.)='Login']<br/>
+Clicked on Login Button<br/>
+Locator Used -> xpath://p[text()='Invalid credentials']<br/>
+Invalid Credential Text is displayed<br/>
 </div>
 </td>
 <td></td>
 <td>19</td>
+<td>testCases.Module1_Login@57a3af25</td></tr>
+<tr>
+<td title='testCases.Module1_Login.VerifyLoginWithNoData()'><b>VerifyLoginWithNoData</b><br>Test class: testCases.Module1_Login<br/>
+<a href="#Output-1075996552" onClick='toggleBox("Output-1075996552", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1075996552" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1075996552">
+Launched Chrome browser<br/>
+Browser Maximized<br/>
+Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login<br/>
+Implicit wait set to: 10 seconds<br/>
+Locator Used -> xpath://h5[text()='Login']<br/>
+Login Text is displayed<br/>
+Locator Used -> xpath://button[normalize-space(.)='Login']<br/>
+Clicked on Login Button<br/>
+Locator Used -> xpath://label[text()='Username']/../..//span[text()='Required']<br/>
+Username Required Text is displayed<br/>
+Locator Used -> xpath://label[text()='Password']/../..//span[text()='Required']<br/>
+Password Required Text is displayed<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
 <td>testCases.Module1_Login@57a3af25</td></tr>
 </table><p>
 </body>

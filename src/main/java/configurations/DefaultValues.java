@@ -7,5 +7,6 @@ public interface DefaultValues {
 			"mkarthickforever@gmail.com"};
 	String FROMEMAIL="johnmathewtrainer@gmail.com";
 	String BROWSER="chrome";
+	String EXEC="local";
 	String URL="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
 }

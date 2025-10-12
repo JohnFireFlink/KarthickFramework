@@ -17,12 +17,14 @@ import org.testng.Reporter;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
+import configurations.DefaultValues;
+
 public class WebUtils {
 
 	public WebDriver driver;
 	int delay;
 	ExtentTest test;
-	public String ENV=System.getProperty("env","local");
+	public String ENV=System.getProperty("env",DefaultValues.EXEC);
 	
 	public WebUtils(ExtentTest test)
 	{
@@ -34,18 +36,25 @@ public class WebUtils {
 		delay=seconds*1000;
 	}
 
-	public WebElement locateElement(List<By> locators)
+	public WebElement locateElement(List<Object> locators)
 	{
 		Duration implicit = driver.manage().timeouts().getImplicitWaitTimeout();
 		WebElement ele=null;
-		for (By  loc : locators) {
+		for (int i = 1; i < locators.size(); i++) {
 			try {
-				ele=driver.findElement(loc);
+				ele=driver.findElement((By)locators.get(i));
+				By loc = (By)locators.get(i);
+				String locStr=loc.toString();
+				String locatorType = locStr.split(": ")[0].replace("By.", "");
+		        String locatorValue = locStr.split(": ")[1];
+		        Reporter.log("Locator Used -> "+locatorType+":"+locatorValue, true);
+		        test.log(Status.INFO, "Locator Used -> "+locatorType+":"+locatorValue);
 				break;
 			} catch (Exception e) {
 				driver.manage().timeouts().implicitlyWait(Duration.ZERO);
 			}
 		}
+		
 		driver.manage().timeouts().implicitlyWait(implicit);
 		return ele;
 	}
@@ -148,27 +157,27 @@ public class WebUtils {
 		Thread.sleep(delay);
 	}
 
-	public void EnterInputInto(List<By> loc, String input) throws InterruptedException
+	public void EnterInputInto(List<Object> loc, String input) throws InterruptedException
 	{
 		locateElement(loc).sendKeys(input);
-		Reporter.log("Entered "+input,true);
-		test.log(Status.PASS, "Entered "+input);
+		Reporter.log("Entered "+input+" into "+loc.get(0),true);
+		test.log(Status.PASS, "Entered "+input+" into "+loc.get(0));
 		Thread.sleep(delay);
 	}
 
-	public void clickOn(List<By> loc) throws InterruptedException
+	public void clickOn(List<Object> loc) throws InterruptedException
 	{
 		locateElement(loc).click();
-		Reporter.log("Clicked on",true);
-		test.log(Status.PASS, "Clicked on");
+		Reporter.log("Clicked on "+loc.get(0),true);
+		test.log(Status.PASS, "Clicked on "+loc.get(0));
 		Thread.sleep(delay);
 	}
 
-	public void verifyDisplayOf(List<By> loc) throws InterruptedException
+	public void verifyDisplayOf(List<Object> loc) throws InterruptedException
 	{
 		locateElement(loc).isDisplayed();
-		Reporter.log("Element display is verified",true);
-		test.log(Status.PASS, "Element display is verified");
+		Reporter.log(loc.get(0)+" is displayed",true);
+		test.log(Status.PASS, loc.get(0)+" is displayed");
 		Thread.sleep(delay);
 	}
 

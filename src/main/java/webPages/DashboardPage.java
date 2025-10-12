@@ -6,9 +6,10 @@ import org.openqa.selenium.By;
 
 public class DashboardPage {
 
-	public ArrayList<By> dashboardTxt()
+	public ArrayList<Object> dashboardTxt()
 	{
-		ArrayList<By> locators=new ArrayList<By>();
+		ArrayList<Object> locators=new ArrayList<Object>();
+		locators.add("Dashboard Text");
 		locators.add(By.xpath("//h6[text()='Dashboard']"));
 		
 		return locators;

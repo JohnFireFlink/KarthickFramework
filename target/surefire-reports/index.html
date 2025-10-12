@@ -216,15 +216,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerifyLoginWithValidData')
 data.setCell(0, 2, 'testCases.Module1_Login')
-data.setCell(0, 3, 28817);
+data.setCell(0, 3, 44957);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'VerifyLoginWithInvalidData')
+data.setCell(1, 1, 'VerifyLoginWithNoData')
 data.setCell(1, 2, 'testCases.Module1_Login')
-data.setCell(1, 3, 19822);
+data.setCell(1, 3, 23458);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyLoginWithNoData')
+data.setCell(2, 1, 'VerifyLoginWithInvalidData')
 data.setCell(2, 2, 'testCases.Module1_Login')
-data.setCell(2, 3, 16428);
+data.setCell(2, 3, 19419);
 window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
 return data;
 }
@@ -247,24 +247,16 @@ return data;
                 <span class="reporter-method-output">Browser Maximized</span>
                 <span class="reporter-method-output">Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</span>
                 <span class="reporter-method-output">Implicit wait set to: 10 seconds</span>
-                <span class="reporter-method-output">Element display is verified</span>
-                <span class="reporter-method-output">Entered Admin</span>
-                <span class="reporter-method-output">Entered admin123</span>
-                <span class="reporter-method-output">Clicked on</span>
-                <span class="reporter-method-output">Element display is verified</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">VerifyLoginWithNoData</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Launched Chrome browser</span>
-                <span class="reporter-method-output">Browser Maximized</span>
-                <span class="reporter-method-output">Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</span>
-                <span class="reporter-method-output">Implicit wait set to: 10 seconds</span>
-                <span class="reporter-method-output">Element display is verified</span>
-                <span class="reporter-method-output">Clicked on</span>
-                <span class="reporter-method-output">Element display is verified</span>
-                <span class="reporter-method-output">Element display is verified</span>
+                <span class="reporter-method-output">Locator Used -> xpath://h5[text()='Login']</span>
+                <span class="reporter-method-output">Login Text is displayed</span>
+                <span class="reporter-method-output">Locator Used -> cssSelector:input[placeholder='Username']</span>
+                <span class="reporter-method-output">Entered Admin into Username Text Field</span>
+                <span class="reporter-method-output">Locator Used -> cssSelector:input[placeholder='Password']</span>
+                <span class="reporter-method-output">Entered admin123 into Password Text Field</span>
+                <span class="reporter-method-output">Locator Used -> xpath://button[normalize-space(.)='Login']</span>
+                <span class="reporter-method-output">Clicked on Login Button</span>
+                <span class="reporter-method-output">Locator Used -> xpath://h6[text()='Dashboard']</span>
+                <span class="reporter-method-output">Dashboard Text is displayed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
@@ -274,11 +266,33 @@ return data;
                 <span class="reporter-method-output">Browser Maximized</span>
                 <span class="reporter-method-output">Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</span>
                 <span class="reporter-method-output">Implicit wait set to: 10 seconds</span>
-                <span class="reporter-method-output">Element display is verified</span>
-                <span class="reporter-method-output">Entered Admin</span>
-                <span class="reporter-method-output">Entered Admin</span>
-                <span class="reporter-method-output">Clicked on</span>
-                <span class="reporter-method-output">Element display is verified</span>
+                <span class="reporter-method-output">Locator Used -> xpath://h5[text()='Login']</span>
+                <span class="reporter-method-output">Login Text is displayed</span>
+                <span class="reporter-method-output">Locator Used -> cssSelector:input[placeholder='Username']</span>
+                <span class="reporter-method-output">Entered Admin into Username Text Field</span>
+                <span class="reporter-method-output">Locator Used -> cssSelector:input[placeholder='Password']</span>
+                <span class="reporter-method-output">Entered Admin into Password Text Field</span>
+                <span class="reporter-method-output">Locator Used -> xpath://button[normalize-space(.)='Login']</span>
+                <span class="reporter-method-output">Clicked on Login Button</span>
+                <span class="reporter-method-output">Locator Used -> xpath://p[text()='Invalid credentials']</span>
+                <span class="reporter-method-output">Invalid Credential Text is displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">VerifyLoginWithNoData</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Launched Chrome browser</span>
+                <span class="reporter-method-output">Browser Maximized</span>
+                <span class="reporter-method-output">Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</span>
+                <span class="reporter-method-output">Implicit wait set to: 10 seconds</span>
+                <span class="reporter-method-output">Locator Used -> xpath://h5[text()='Login']</span>
+                <span class="reporter-method-output">Login Text is displayed</span>
+                <span class="reporter-method-output">Locator Used -> xpath://button[normalize-space(.)='Login']</span>
+                <span class="reporter-method-output">Clicked on Login Button</span>
+                <span class="reporter-method-output">Locator Used -> xpath://label[text()='Username']/../..//span[text()='Required']</span>
+                <span class="reporter-method-output">Username Required Text is displayed</span>
+                <span class="reporter-method-output">Locator Used -> xpath://label[text()='Password']/../..//span[text()='Required']</span>
+                <span class="reporter-method-output">Password Required Text is displayed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -303,31 +317,31 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">VerifyLoginWithValidData</span>
-                <span class="method-start">426 ms</span>
+                <span class="method-start">387 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testOver([TestResult name=VerifyLoginWithValidData status=SUCCESS method=Module1_Login.VerifyLoginWithValidDa...)</span>
-                <span class="method-start">29243 ms</span>
+                <span class="method-start">45350 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">VerifyLoginWithInvalidData</span>
-                <span class="method-start">30492 ms</span>
+                <span class="method-start">46587 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testOver([TestResult name=VerifyLoginWithInvalidData status=SUCCESS method=Module1_Login.VerifyLoginWithInval...)</span>
-                <span class="method-start">50318 ms</span>
+                <span class="method-start">66009 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">VerifyLoginWithNoData</span>
-                <span class="method-start">51569 ms</span>
+                <span class="method-start">67225 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">testOver([TestResult name=VerifyLoginWithNoData status=SUCCESS method=Module1_Login.VerifyLoginWithNoData()[p...)</span>
-                <span class="method-start">67997 ms</span>
+                <span class="method-start">90684 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">updateReport</span>
-                <span class="method-start">69246 ms</span>
+                <span class="method-start">91986 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
