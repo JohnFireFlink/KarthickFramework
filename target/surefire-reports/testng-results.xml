@@ -89,16 +89,16 @@
       <![CDATA[Closed browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-10-12T03:55:41 IST" name="Suite" finished-at="2025-10-12T03:56:25 IST" duration-ms="44686">
+  <suite started-at="2025-10-12T18:14:10 IST" name="Regression Suite" finished-at="2025-10-12T18:15:21 IST" duration-ms="70121">
     <groups>
     </groups>
-    <test started-at="2025-10-12T03:55:41 IST" name="Test" finished-at="2025-10-12T03:56:25 IST" duration-ms="44686">
+    <test started-at="2025-10-12T18:14:10 IST" name="Test" finished-at="2025-10-12T18:15:21 IST" duration-ms="70121">
       <class name="testCases.Module1_Login">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:testCases.Module1_Login@52bf72b5]" started-at="2025-10-12T03:55:41 IST" name="setUpReport" finished-at="2025-10-12T03:55:41 IST" duration-ms="129" status="PASS">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:14:10 IST" name="setUpReport" finished-at="2025-10-12T18:14:10 IST" duration-ms="351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method signature="VerifyLoginWithValidData()[pri:0, instance:testCases.Module1_Login@52bf72b5]" started-at="2025-10-12T03:55:41 IST" name="VerifyLoginWithValidData" finished-at="2025-10-12T03:55:56 IST" duration-ms="15334" status="PASS">
+        <test-method signature="VerifyLoginWithValidData()[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:14:10 IST" name="VerifyLoginWithValidData" finished-at="2025-10-12T18:14:34 IST" duration-ms="23622" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launched Chrome browser]]>
@@ -129,11 +129,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- VerifyLoginWithValidData -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@52bf72b5]" started-at="2025-10-12T03:55:56 IST" name="testOver" finished-at="2025-10-12T03:55:57 IST" duration-ms="1111" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:14:34 IST" name="testOver" finished-at="2025-10-12T18:14:35 IST" duration-ms="1220" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyLoginWithValidData status=SUCCESS method=Module1_Login.VerifyLoginWithValidData()[pri:0, instance:testCases.Module1_Login@52bf72b5] output=Launched Chrome browser]]]>
+                <![CDATA[[TestResult name=VerifyLoginWithValidData status=SUCCESS method=Module1_Login.VerifyLoginWithValidData()[pri:0, instance:testCases.Module1_Login@57a3af25] output=Launched Chrome browser]]]>
               </value>
             </param>
           </params>
@@ -143,7 +143,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method signature="VerifyLoginWithInvalidData()[pri:1, instance:testCases.Module1_Login@52bf72b5]" started-at="2025-10-12T03:55:57 IST" name="VerifyLoginWithInvalidData" finished-at="2025-10-12T03:56:11 IST" duration-ms="13839" status="PASS">
+        <test-method signature="VerifyLoginWithInvalidData()[pri:1, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:14:35 IST" name="VerifyLoginWithInvalidData" finished-at="2025-10-12T18:14:58 IST" duration-ms="22277" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launched Chrome browser]]>
@@ -174,11 +174,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- VerifyLoginWithInvalidData -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@52bf72b5]" started-at="2025-10-12T03:56:11 IST" name="testOver" finished-at="2025-10-12T03:56:12 IST" duration-ms="1113" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:14:58 IST" name="testOver" finished-at="2025-10-12T18:14:59 IST" duration-ms="1180" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyLoginWithInvalidData status=SUCCESS method=Module1_Login.VerifyLoginWithInvalidData()[pri:1, instance:testCases.Module1_Login@52bf72b5] output=Launched Chrome browser]]]>
+                <![CDATA[[TestResult name=VerifyLoginWithInvalidData status=SUCCESS method=Module1_Login.VerifyLoginWithInvalidData()[pri:1, instance:testCases.Module1_Login@57a3af25] output=Launched Chrome browser]]]>
               </value>
             </param>
           </params>
@@ -188,7 +188,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method signature="VerifyLoginWithNoData()[pri:2, instance:testCases.Module1_Login@52bf72b5]" started-at="2025-10-12T03:56:12 IST" name="VerifyLoginWithNoData" finished-at="2025-10-12T03:56:24 IST" duration-ms="12134" status="PASS">
+        <test-method signature="VerifyLoginWithNoData()[pri:2, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:14:59 IST" name="VerifyLoginWithNoData" finished-at="2025-10-12T18:15:19 IST" duration-ms="20593" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Launched Chrome browser]]>
@@ -216,11 +216,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- VerifyLoginWithNoData -->
-        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@52bf72b5]" started-at="2025-10-12T03:56:24 IST" name="testOver" finished-at="2025-10-12T03:56:25 IST" duration-ms="1123" status="PASS">
+        <test-method is-config="true" signature="testOver(org.testng.ITestResult)[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:15:19 IST" name="testOver" finished-at="2025-10-12T18:15:21 IST" duration-ms="1172" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyLoginWithNoData status=SUCCESS method=Module1_Login.VerifyLoginWithNoData()[pri:2, instance:testCases.Module1_Login@52bf72b5] output=Launched Chrome browser]]]>
+                <![CDATA[[TestResult name=VerifyLoginWithNoData status=SUCCESS method=Module1_Login.VerifyLoginWithNoData()[pri:2, instance:testCases.Module1_Login@57a3af25] output=Launched Chrome browser]]]>
               </value>
             </param>
           </params>
@@ -230,11 +230,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- testOver -->
-        <test-method is-config="true" signature="updateReport()[pri:0, instance:testCases.Module1_Login@52bf72b5]" started-at="2025-10-12T03:56:26 IST" name="updateReport" finished-at="2025-10-12T03:56:26 IST" duration-ms="339" status="PASS">
+        <test-method is-config="true" signature="updateReport()[pri:0, instance:testCases.Module1_Login@57a3af25]" started-at="2025-10-12T18:15:21 IST" name="updateReport" finished-at="2025-10-12T18:15:21 IST" duration-ms="731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateReport -->
       </class> <!-- testCases.Module1_Login -->
     </test> <!-- Test -->
-  </suite> <!-- Suite -->
+  </suite> <!-- Regression Suite -->
 </testng-results>
