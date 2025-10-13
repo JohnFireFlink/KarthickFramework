@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Regression_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Regression Suite</span>
+              <span class="suite-name border-failed">Regression Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Regression_Suite" class="hide-methods failed suite-Regression_Suite"> (hide)</a> <!-- hide-methods failed suite-Regression_Suite -->
+                      <a href="#" panel-name="suite-Regression_Suite" class="show-methods failed suite-Regression_Suite"> (show)</a> <!-- show-methods failed suite-Regression_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Regression_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Regression_Suite" title="testCases.Module1_Login" class="method navigator-link" hash-for-method="Verify_Login_With_Valid_Data">Verify_Login_With_Valid_Data</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Regression_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,17 +117,12 @@
                     <div class="method-list-content passed suite-Regression_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Suite" title="testCases.Module1_Login" class="method navigator-link" hash-for-method="VerifyLoginWithInvalidData">VerifyLoginWithInvalidData</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Suite" title="testCases.Module1_Login" class="method navigator-link" hash-for-method="Verify_Login_With_Invalid_Data">Verify_Login_With_Invalid_Data</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Suite" title="testCases.Module1_Login" class="method navigator-link" hash-for-method="VerifyLoginWithNoData">VerifyLoginWithNoData</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Regression_Suite" title="testCases.Module1_Login" class="method navigator-link" hash-for-method="VerifyLoginWithValidData">VerifyLoginWithValidData</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Regression_Suite" title="testCases.Module1_Login" class="method navigator-link" hash-for-method="Verify_Login_With_NoData">Verify_Login_With_NoData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression_Suite -->
@@ -128,6 +137,47 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Regression_Suite" class="panel Regression_Suite">
+          <div class="suite-Regression_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.Module1_Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_Login_With_Valid_Data">
+                  </a> <!-- Verify_Login_With_Valid_Data -->
+                  <span class="method-name">Verify_Login_With_Valid_Data</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[text()=&apos;Dashboard&apos;]&quot;}
+  (Session info: chrome=141.0.7390.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee61dafd09a94e7de5239770e1ade2b9, findElement {using=xpath, value=//h6[text()=&apos;Dashboard&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.66, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58048/devtoo..., se:cdpVersion: 141.0.7390.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee61dafd09a94e7de5239770e1ade2b9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at utilities.WebUtils.locateElement(WebUtils.java:51)
+	at utilities.WebUtils.verifyDisplayOf(WebUtils.java:232)
+	at testCases.Module1_Login.Verify_Login_With_Valid_Data(Module1_Login.java:19)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Suite-class-failed -->
           <div class="suite-Regression_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -136,23 +186,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyLoginWithInvalidData">
-                  </a> <!-- VerifyLoginWithInvalidData -->
-                  <span class="method-name">VerifyLoginWithInvalidData</span>
+                  <a name="Verify_Login_With_Invalid_Data">
+                  </a> <!-- Verify_Login_With_Invalid_Data -->
+                  <span class="method-name">Verify_Login_With_Invalid_Data</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyLoginWithNoData">
-                  </a> <!-- VerifyLoginWithNoData -->
-                  <span class="method-name">VerifyLoginWithNoData</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerifyLoginWithValidData">
-                  </a> <!-- VerifyLoginWithValidData -->
-                  <span class="method-name">VerifyLoginWithValidData</span>
+                  <a name="Verify_Login_With_NoData">
+                  </a> <!-- Verify_Login_With_NoData -->
+                  <span class="method-name">Verify_Login_With_NoData</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,22 +257,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyLoginWithValidData')
+data.setCell(0, 1, 'Verify_Login_With_Invalid_Data')
 data.setCell(0, 2, 'testCases.Module1_Login')
-data.setCell(0, 3, 44957);
+data.setCell(0, 3, 44572);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'VerifyLoginWithNoData')
+data.setCell(1, 1, 'Verify_Login_With_Valid_Data')
 data.setCell(1, 2, 'testCases.Module1_Login')
-data.setCell(1, 3, 23458);
+data.setCell(1, 3, 38563);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'VerifyLoginWithInvalidData')
+data.setCell(2, 1, 'Verify_Login_With_NoData')
 data.setCell(2, 2, 'testCases.Module1_Login')
-data.setCell(2, 3, 19419);
+data.setCell(2, 3, 38055);
 window.suiteTableData['Regression_Suite']= { tableData: data, tableDiv: 'times-div-Regression_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Regression_Suite">
               </div> <!-- times-div-Regression_Suite -->
             </div> <!-- times-div -->
@@ -241,26 +284,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">VerifyLoginWithValidData</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">Launched Chrome browser</span>
-                <span class="reporter-method-output">Browser Maximized</span>
-                <span class="reporter-method-output">Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</span>
-                <span class="reporter-method-output">Implicit wait set to: 10 seconds</span>
-                <span class="reporter-method-output">Locator Used -> xpath://h5[text()='Login']</span>
-                <span class="reporter-method-output">Login Text is displayed</span>
-                <span class="reporter-method-output">Locator Used -> cssSelector:input[placeholder='Username']</span>
-                <span class="reporter-method-output">Entered Admin into Username Text Field</span>
-                <span class="reporter-method-output">Locator Used -> cssSelector:input[placeholder='Password']</span>
-                <span class="reporter-method-output">Entered admin123 into Password Text Field</span>
-                <span class="reporter-method-output">Locator Used -> xpath://button[normalize-space(.)='Login']</span>
-                <span class="reporter-method-output">Clicked on Login Button</span>
-                <span class="reporter-method-output">Locator Used -> xpath://h6[text()='Dashboard']</span>
-                <span class="reporter-method-output">Dashboard Text is displayed</span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">VerifyLoginWithInvalidData</span>
+              <span class="reporter-method-name">Verify_Login_With_Invalid_Data</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Launched Chrome browser</span>
                 <span class="reporter-method-output">Browser Maximized</span>
@@ -279,7 +303,7 @@ return data;
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">VerifyLoginWithNoData</span>
+              <span class="reporter-method-name">Verify_Login_With_NoData</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Launched Chrome browser</span>
                 <span class="reporter-method-output">Browser Maximized</span>
@@ -293,6 +317,32 @@ return data;
                 <span class="reporter-method-output">Username Required Text is displayed</span>
                 <span class="reporter-method-output">Locator Used -> xpath://label[text()='Password']/../..//span[text()='Required']</span>
                 <span class="reporter-method-output">Password Required Text is displayed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">Verify_Login_With_Valid_Data</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Launched Chrome browser</span>
+                <span class="reporter-method-output">Browser Maximized</span>
+                <span class="reporter-method-output">Navigated to https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</span>
+                <span class="reporter-method-output">Implicit wait set to: 10 seconds</span>
+                <span class="reporter-method-output">Locator Used -> xpath://h5[text()='Login']</span>
+                <span class="reporter-method-output">Login Text is displayed</span>
+                <span class="reporter-method-output">Locator Used -> cssSelector:input[placeholder='Username']</span>
+                <span class="reporter-method-output">Entered Admin into Username Text Field</span>
+                <span class="reporter-method-output">Locator Used -> cssSelector:input[placeholder='Password']</span>
+                <span class="reporter-method-output">Entered admin into Password Text Field</span>
+                <span class="reporter-method-output">Locator Used -> xpath://button[normalize-space(.)='Login']</span>
+                <span class="reporter-method-output">Clicked on Login Button</span>
+                <span class="reporter-method-output">Failed to verify Dashboard Text - Reason: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[text()='Dashboard']"}
+  (Session info: chrome=141.0.7390.66)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee61dafd09a94e7de5239770e1ade2b9, findElement {using=xpath, value=//h6[text()='Dashboard']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.66, chrome: {chromedriverVersion: 141.0.7390.76 (d6fcfbb51aac..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58048}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58048/devtoo..., se:cdpVersion: 141.0.7390.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ee61dafd09a94e7de5239770e1ade2b9</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -316,32 +366,34 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
-                <span class="method-name">VerifyLoginWithValidData</span>
-                <span class="method-start">387 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Verify_Login_With_Valid_Data</span>
+                <span class="method-start">390 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">testOver([TestResult name=VerifyLoginWithValidData status=SUCCESS method=Module1_Login.VerifyLoginWithValidDa...)</span>
-                <span class="method-start">45350 ms</span>
+                <span class="method-name">testOver([TestResult name=Verify_Login_With_Valid_Data status=FAILURE method=Module1_Login.Verify_Login_With_...)</span>
+                <span class="method-start">38978 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">VerifyLoginWithInvalidData</span>
-                <span class="method-start">46587 ms</span>
+                <span class="method-name">Verify_Login_With_Invalid_Data</span>
+                <span class="method-start">38988 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">testOver([TestResult name=VerifyLoginWithInvalidData status=SUCCESS method=Module1_Login.VerifyLoginWithInval...)</span>
-                <span class="method-start">66009 ms</span>
+                <span class="method-name">testOver([TestResult name=Verify_Login_With_Invalid_Data status=SUCCESS method=Module1_Login.Verify_Login_Wit...)</span>
+                <span class="method-start">83563 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">VerifyLoginWithNoData</span>
-                <span class="method-start">67225 ms</span>
+                <span class="method-name">Verify_Login_With_NoData</span>
+                <span class="method-start">84739 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">testOver([TestResult name=VerifyLoginWithNoData status=SUCCESS method=Module1_Login.VerifyLoginWithNoData()[p...)</span>
-                <span class="method-start">90684 ms</span>
+                <span class="method-name">testOver([TestResult name=Verify_Login_With_NoData status=SUCCESS method=Module1_Login.Verify_Login_With_NoDa...)</span>
+                <span class="method-start">122796 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">updateReport</span>
-                <span class="method-start">91986 ms</span>
+                <span class="method-start">124070 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

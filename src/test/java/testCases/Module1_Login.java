@@ -7,21 +7,21 @@ import utilities.BaseClass;
 public class Module1_Login extends BaseClass {
 
 	@Test(priority = 0)
-	public void VerifyLoginWithValidData() throws InterruptedException
+	public void Verify_Login_With_Valid_Data() throws Exception
 	{
 		generateReport();
 		web.setDelayBtwnSteps(1);
 		
 		openBrowserAndNavigateToLoginPage(BROWSER);
 		web.EnterInputInto(lp.userNameTF(), "Admin");
-		web.EnterInputInto(lp.PasswordTF(), "admin123");
+		web.EnterInputInto(lp.PasswordTF(), "admin");
 		web.clickOn(lp.loginBtn());
 		web.verifyDisplayOf(dbp.dashboardTxt());
 		
 	}
 	
 	@Test(priority = 1)
-	public void VerifyLoginWithInvalidData() throws InterruptedException
+	public void Verify_Login_With_Invalid_Data() throws Exception
 	{
 		generateReport();
 		web.setDelayBtwnSteps(1);
@@ -35,7 +35,7 @@ public class Module1_Login extends BaseClass {
 	}
 	
 	@Test(priority = 2)
-	public void VerifyLoginWithNoData() throws InterruptedException
+	public void Verify_Login_With_NoData() throws Exception
 	{
 		generateReport();
 		web.setDelayBtwnSteps(1);

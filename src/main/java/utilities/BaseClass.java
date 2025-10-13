@@ -4,8 +4,6 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
@@ -47,24 +45,13 @@ public class BaseClass {
 	@AfterMethod
 	public void testOver(ITestResult res) throws InterruptedException
 	{
-		if(res.getStatus()==ITestResult.FAILURE)
-		{
-			if (web.driver!=null) 
-			{
-			TakesScreenshot tss=(TakesScreenshot) web.driver;
-			String src = tss.getScreenshotAs(OutputType.BASE64);
-			test.addScreenCaptureFromBase64String(src);
-			}
-		}
 		if(res.getStatus()==ITestResult.SUCCESS)
 		{
 			if (web.driver!=null) 
 			{
 				web.closeBrowser();
-			}
-			
+			}	
 		}
-		
 	}
 	
 	//Pages
@@ -72,7 +59,7 @@ public class BaseClass {
 	public DashboardPage dbp=new DashboardPage();
 	
 	//WebLibrary
-	public void openBrowserAndNavigateToLoginPage(String browser) throws InterruptedException
+	public void openBrowserAndNavigateToLoginPage(String browser) throws Exception
 	{
 		web.openBrowser(browser);
 		web.maximizeBrowser();

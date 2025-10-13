@@ -5,8 +5,10 @@
     <classes>
       <class name="testCases.Module1_Login">
         <methods>
-          <include name="postCondition"/>
-          <include name="verifyLoginWithNoData"/>
+          <include name="Verify_Login_With_Valid_Data"/>
+          <include name="updateReport"/>
+          <include name="setUpReport"/>
+          <include name="testOver"/>
         </methods>
       </class> <!-- testCases.Module1_Login -->
     </classes>
