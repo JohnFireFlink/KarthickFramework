@@ -14,7 +14,7 @@ public class Module1_Login extends BaseClass {
 		
 		openBrowserAndNavigateToLoginPage(BROWSER);
 		web.EnterInputInto(lp.userNameTF(), "Admin");
-		web.EnterInputInto(lp.PasswordTF(), "admin");
+		web.EnterInputInto(lp.PasswordTF(), "admin123");
 		web.clickOn(lp.loginBtn());
 		web.verifyDisplayOf(dbp.dashboardTxt());
 		
